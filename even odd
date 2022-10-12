@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class EvenOdd01 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int num = 0;
+System.out.println("Enter a Positive Integer (>= 0) : ");
+num = scan.nextInt();
+if(num == 0)
+System.out.println("Number is 0 !");
+else if(num == 1)
+System.out.println("Number is 1 !");
+else if((num % 2) == 0)
+System.out.println("Number is Even !");
+else
+System.out.println("Number is Odd !");
+}
+}
