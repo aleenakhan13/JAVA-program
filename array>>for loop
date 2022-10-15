@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Input
+{
+ public static void main(String a[])
+ 
+ {
+   int x[]=new int[5];
+  
+    for(i=0;i<=5;i++)
+  { 
+ a[i]=s.nextInt();
+   }
+ max=a[0];
+  for(i=0;i<=5;i++)
+{
+
+if (max < a[i] );
+
+}
+
+
+    Scanner Sc=new Scanner(System.in);
+  }
+}
+ 
