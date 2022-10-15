@@ -1,0 +1,16 @@
+ class Box
+{
+ int x=10;
+ int y=20;
+ int z=30;
+ int vol;
+
+
+public static void main(String a[])
+  { Box B=new Box();
+         B.vol=B.x*B.y*B.z;
+
+System.out.println("volume of box is "+ B.vol);
+   }
+}
+         
