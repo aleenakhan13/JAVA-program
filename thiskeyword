@@ -1,0 +1,20 @@
+class A
+{ 
+    void m()
+    {
+        
+    }
+    void n
+    {
+       this.m(); 
+    }
+    void n1()
+    {
+        this.n();
+    }
+    public static void main(String a[])
+    {
+         A ob=new A();
+             ob.n1();
+    }
+}   
