@@ -1,0 +1,51 @@
+ques.//write a program to calculate volume of box using copy constructor or this keyword// 
+ 
+ public class Box
+{
+ int x;
+ int y;
+ int z;
+ //int vol;
+ Box()
+ {
+     x=2;
+     y=3;
+     z=5;
+     
+ }
+
+Box(int m)
+{
+    x=y=z=m;
+}
+Box(int x,int y,int z)
+{
+    this.x=x;
+    this.y=y;
+    this.z=z;
+    
+}
+Box(Box ob)
+{
+    x=ob.x;
+    y=ob.y;
+    z=ob.z;
+}
+void volume()
+{
+    System.out.println(x*y*z);
+}
+public static void main(String a[])
+  { 
+     
+      Box ob1=new Box();
+            ob1.volume();
+      Box ob2=new Box(10);
+             ob2.volume();
+      Box ob3=new Box(1,2,3);
+              ob3.volume();
+      Box ob4=new Box(ob3);
+  }          
+  
+}
+         
