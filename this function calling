@@ -1,0 +1,39 @@
+import java.util.Scanner;    
+public class A {
+    
+ int p,q,r; 
+ 
+ A(int p,int q,int r)
+ 
+ { 
+     this.p=p;
+     this.q=q;
+     this.r=r;
+     
+ System.out.println("print p"+" "+p);
+
+ System.out.println("print q"+ " "+q);
+ 
+  System.out.println("print r"+" "+r);
+  
+ }
+ public static void main(String[] args)
+ {
+  Scanner sc= new Scanner(System.in); 
+  System.out.println("enter value p");
+  int p=sc.nextInt();
+  System.out.println("enter value q");
+  int q=sc.nextInt();
+  
+   System.out.println("enter value r");
+  int r=sc.nextInt();
+  
+     A ob=new A(p,q,r); 
+        
+    
+        
+   }
+}
+
+
+
