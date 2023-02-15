@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class Student
+{
+        int roll;
+        String name;
+        void getdata()
+        {       System.out.println("-----------------------------------------");
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter student name:");
+                name=sc.nextLine();
+  		System.out.println("enter student rollnumber:");
+                roll=sc.nextInt();
+
+              
+                
+        }
+}
+class StudentExam extends Student  {   
+    
+        int sub1, sub2, sub3;
+        float per;
+    
+        void accept_data()
+        { Scanner sc=new Scanner(System.in);
+        	 System.out.println( " Enter Marks for Subject 1 : ");
+         	 sub1=sc.nextInt();  
+          	 System.out.println(" Enter Marks for Subject 2 : ");
+          	 sub2=sc.nextInt();
+ 		 System.out.println("Enter Marks for Subject 3 : ");
+                 sub3=sc.nextInt();
+
+
+                int per = (sub1+sub2+sub3)/3;
+                 System.out.println("Total Percentage     :  "+per);
+                System.out.println(" ----------------------------------------- ");
+                
+        }
+        
+}
+class StudentResult extends StudentExam      
+{
+    
+        public static void main(String arg[])
+   {
+      StudentResult ob =new StudentResult ();
+      ob.getdata();
+      ob. accept_data();
+   }
+}
