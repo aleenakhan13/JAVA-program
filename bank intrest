@@ -1,0 +1,45 @@
+//polymorphism bank scenerio
+import java.util.Scanner;
+class Bank{
+		 float getRateOfString()
+		
+	      { 
+		return 100.0f;
+	      }
+	  }
+
+class SBI extends Bank{ 
+		        float getRateOfString()
+	      { System.out.println("rate of intrest of SBI is :");
+		return 8.4f;
+	      } 
+
+		      }
+
+
+class ICICI extends Bank{
+               		float getRateOfString()
+	     { System.out.println("rate of intrest of ICICI is :");
+		return 7.3f;
+	      } 
+			}
+
+
+class AXIS extends Bank{
+
+         		 float getRateOfString()
+	      { System.out.println("rate of intrest of AXIS is :");
+		return 9.7f;
+	      } 
+	}
+class Bank_Intrest{
+ 		public static void main(String args[])
+		{
+			Bank ob1 =new SBI();
+  			System.out.println(ob1.getRateOfString());
+ 			Bank ob2 =new ICICI();
+			System.out.println(ob2.getRateOfString());
+			Bank ob3 =new AXIS();
+			System.out.println(ob3.getRateOfString());
+		}
+}
